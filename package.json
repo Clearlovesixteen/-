@@ -1,0 +1,65 @@
+{
+  "name": "bookmatch",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "build:stage": "vue-cli-service build --mode staging",
+    "serve:stage": "vue-cli-service build --mode staging"
+  },
+  "dependencies": {
+    "@peiyou/open_platfrom_sdk": "0.0.2",
+    "babel-plugin-import": "^1.13.0",
+    "core-js": "^3.6.5",
+    "js-md5": "^0.7.3",
+    "lodash": "^4.17.20",
+    "mta-h5-analysis": "^2.0.15",
+    "postcss-aspect-ratio-mini": "^1.0.1",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-px-to-viewport": "^1.1.1",
+    "postcss-viewport-units": "^0.1.6",
+    "postcss-write-svg": "^3.0.1",
+    "qrcodejs2": "0.0.2",
+    "vant": "^2.6.0",
+    "vconsole": "^3.3.4",
+    "vue": "^2.6.11",
+    "vue-canvas-poster": "^1.2.1",
+    "vue-router": "^3.2.0",
+    "vuex": "^3.4.0",
+    "weixin-js-sdk": "^1.6.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

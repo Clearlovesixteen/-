@@ -1,0 +1,370 @@
+.main {
+    font-size: 50px;
+    position: relative;
+    overflow: auto;
+    height: calc(100vh - 110px);
+}
+.idModule{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    // margin: 0 35px;
+    z-index: 10;
+}
+.top {
+    width: 100%;
+    display: block;
+}
+// .banner {
+//     width: 100%;
+//     display: block;
+// }
+.rule {
+    position: absolute;
+    width: 79px;
+    top: 85px;
+    right: 38px;
+}
+.userInfo {
+    height: 85px;
+    background-color: #0041ff;
+}
+.starts {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 13px;
+    background-color: #2157f3;
+    padding-bottom: 20px;
+    img {
+        width: 231px;
+        width: 219px;
+        height: 146px;
+    }
+}
+
+// 搜索
+::v-deep .van-search {
+    position: absolute;
+    top: 440px;
+    // width: 100%;
+    width: 670px;
+    border-radius: 37px;
+    left: 47px;
+    padding: 0;
+    height: 69px;
+}
+::v-deep .van-field__left-icon {
+    visibility: hidden;
+}
+::v-deep .van-search__content {
+    padding-left:20px;
+    background-color: #ffffff;
+}
+.van-search__action {
+    position: relative;
+}
+.searchBtn {
+    position: absolute;
+    opacity: 0;
+    background-color: #000;
+    right: 20px;
+    // top: 0px;
+    width: 50px;
+    height: 50px;
+}
+// 跑马灯
+.van-notice-bar{
+    background-color: #ffffff;
+    
+    .notice-swipe {
+        height: 50px;
+        font-size: 22px;
+        margin-top: 30px;
+        color: #0041ff;
+        font-weight: normal;
+        font-stretch: normal;
+       
+        letter-spacing: 0px;
+        width: 432px;
+        background-image: url(../../assets/lightBackground.png);
+        background-size: cover;
+        position: relative;
+    }
+    .swipeDiv{
+        height: 50px;
+        line-height: 50px;
+    }
+    img{
+        width: 50px;
+        height: 50px;
+        border-radius: 40px;
+        position: absolute;
+        left: 0;
+    }
+}
+::v-deep .van-notice-bar__wrap{
+    justify-content: center;
+}
+
+// 老师模块
+.teacherMod{
+    display: flex;
+    padding: 0 40px;
+    justify-content: space-between;
+    // align-items: flex-end;
+    // text-align: bottom;
+    // vertical-align: bottom;
+    .teacherModText{
+        img{
+            width: 7px;
+            margin-right: 10px;
+        }
+        h3{
+            margin: 0;
+            display: inline-block;
+            color: #0041ff;
+            font-size: 35px;
+            vertical-align: bottom;
+            position: relative;
+            top: -2px;
+        }
+        span{
+            display: inline-block;
+            font-size: 24px;
+            color: #666667;
+        }
+    }
+    .goNoteShow{
+        img{
+            width: 150px;
+            // margin-right: 7px;
+        }
+    }
+}
+
+// 学生笔记图
+.content {
+    position: relative;
+    padding-top: 85px;
+    // top: 0px;
+    // bottom: 110px;
+    width: 100%;
+    // height: calc(100% - 85px );
+    // height: 100%;
+    // overflow: scroll;
+    .list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 33px 40px;
+        .li {
+            border-radius: 30px;
+            border: solid 4px #2157f3;
+            padding: 0px 15px;
+            padding-bottom: 20px;
+            position: relative;
+            margin-bottom: 13px;
+            text-align: left;
+            .studName {
+                display: block;
+                font-size: 24px;
+                height: 45px;
+                font-weight: bold;
+                font-stretch: normal;
+                line-height: 45px;
+                letter-spacing: 0px;
+                color: #2157f3;
+                // text-align: left;
+            }
+            .head {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+            }
+            // .name {
+            //     position: absolute;
+            //     left: 110px;
+            //     top: -35px;
+            //     font-size: 22px;
+            //     letter-spacing: 0px;
+            //     color: #565656;
+            // }
+            .detailImg {
+                width: 290px;
+                height: 240px;
+                border-radius: 25px;
+                display: block;
+            }
+            .code {
+                margin-top: 15px;
+                font-size: 22px;
+                font-weight: normal;
+                font-stretch: normal;
+                letter-spacing: 0px;
+                color: #2157f3;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .imgAndName{
+                    display: flex;
+                    align-items: center;
+                }
+                .userImg{
+                    width: 58px;
+                    border-radius: 50%;
+                }
+                .name{
+                    margin-left: 9px;
+                }
+                .assist {
+                    display: flex;
+                    align-items: center;
+                    img {
+                        width: 39px;
+                        height: 33px;
+                        padding-right: 7px;
+                    }
+                }
+            }
+        }
+    }
+}
+// 导航栏
+.bottomBar {
+    position: absolute;
+    height: 110px;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 8px 7px 22px 5px 
+		rgba(188, 188, 188, 0.28);
+    .buttonGroup {
+        width: 530px;
+        margin: auto;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        > div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 51px;
+            }
+            span {
+                font-size: 22px;
+                font-weight: normal;
+                font-stretch: normal;
+                letter-spacing: 0px;
+                color: #565656;
+            }
+        }
+    }
+    > img {
+        position: absolute;
+        width: 368px;
+        height: 50px;
+        left: 180px;
+        top: -38px;
+    }
+}
+.close {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    left: 260px;
+}
+.qr {
+    width: 591px;
+    height: 670px;
+}
+.coupon{
+    width: 591px;
+}
+.clickCoupon{
+    position: absolute;
+    width: 280px;
+    left: 160px;
+    bottom: 80px;
+}
+.couponText{
+    width: 200px;
+    position: absolute;
+    top: 60px;
+    left: 190px;
+    color: #df1341;
+    h3{
+        margin: 0;
+    }
+    span{
+        font-size: 40px;
+    }
+}
+.upTip {
+    width: 591px;
+    height: 532px;
+    background: url("../../assets/upTip.png") center 100%/100% no-repeat;
+    button {
+        width: 281px;
+        height: 63px;
+        background-color: #2157f3;
+        border: none;
+        border-radius: 32px;
+        font-size: 38px;
+        font-weight: normal;
+        font-stretch: normal;
+        line-height: 63px;
+        letter-spacing: 8px;
+        color: #ffffff;
+        margin-top: 398px;
+    }
+}
+.searchNone{
+    margin-top: 150px;
+    width: 450px;
+}
+
+.toMyNote{
+    width: 591px;
+}
+// @-webkit-keyframes upAnimation {
+//     0% {
+//         transform: rotate(0deg);
+//     }
+//     100% {
+//         transform: rotate(360deg);
+//     }
+// }
+
+.imgAnimation {
+    // // animation-name: imgAnimation;
+    // animation: imgAnimation 5s alternate;
+    // -webkit-animation: imgAnimation 5s alternate ;
+    // -moz-animation: imgAnimation 5s alternate infinite;
+    // height: 1334px;
+}
+// @-webkit-keyframes imgAnimation {
+//     0% {
+//         opacity: 1;
+//     }
+//     100% {
+//         opacity: 0;
+//     }
+// }
+// .none {
+//     //  animation-name:noneanima;
+//     //  animation: imgAnimation 5s alternate;
+//     //     -webkit-animation: imgAnimation 5s alternate ;
+//     //     -moz-animation: imgAnimation 5s alternate infinite;
+// }
+// @-webkit-keyframes noneanima {
+//     0% {
+//         opacity: 1;
+//     }
+//     100% {
+//         opacity: 0;
+//         width: 0;
+//         height: 0;
+//     }
+// }
